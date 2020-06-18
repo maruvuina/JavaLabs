@@ -1,0 +1,25 @@
+package by.bsu.lab11a.thread;
+
+import java.io.*;
+
+public class FileOperator {
+    File file = new File("data\\File.txt");
+    BufferedWriter bw;
+    BufferedReader br;
+    boolean isWriteComplete = false;
+
+    public FileOperator() throws IOException {
+        bw = new BufferedWriter(new FileWriter(file));
+        br = new BufferedReader(new FileReader(file));
+    }
+
+    public void writeInFile(String str) throws IOException{
+        bw.write(str);
+        bw.newLine();
+        bw.flush();
+    }
+
+    public String readFromFile() throws IOException{
+        return br.readLine();
+    }
+}
