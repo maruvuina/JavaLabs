@@ -3,6 +3,7 @@ package by.bsu.lab11b1.logic;
 import by.bsu.lab11b1.entity.computer.Computer;
 
 public class Logic {
+
     public String writeDataToFileAsString(Computer computer) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(computer.getProcessor().getBrand()).append("| ");

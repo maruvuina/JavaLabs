@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GetData {
+
     private Logic logic;
 
     public GetData() {

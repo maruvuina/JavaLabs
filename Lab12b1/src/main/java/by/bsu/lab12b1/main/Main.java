@@ -1,12 +1,12 @@
 package by.bsu.lab12b1.main;
 
-import by.bsu.lab12b1.entities.computer.Computer;
 import by.bsu.lab12b1.logic.GetData;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+
     public static void main(String[] args) {
         GetData getData = new GetData();
         List<String> sqlSelectQueries = new ArrayList<>();

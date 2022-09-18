@@ -7,13 +7,17 @@ import by.bsu.lab12b1.entities.processor.Processor;
 import by.bsu.lab12b1.entities.ram.Ram;
 import by.bsu.lab12b1.entities.winchester.Winchester;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.Collectors;
 
 public class DataBaseHelper {
+
     private Connection connect;
 
     public DataBaseHelper() throws SQLException {

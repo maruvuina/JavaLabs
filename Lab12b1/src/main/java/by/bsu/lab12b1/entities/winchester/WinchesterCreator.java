@@ -3,6 +3,7 @@ package by.bsu.lab12b1.entities.winchester;
 import com.github.javafaker.Faker;
 
 public class WinchesterCreator {
+
     private String getAlphaNumericString() {
         int n = 10;
         String alphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";

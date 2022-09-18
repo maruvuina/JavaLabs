@@ -3,12 +3,9 @@ package by.bsu.lab12b1.logic;
 import by.bsu.lab12b1.db.DataBaseHelper;
 import by.bsu.lab12b1.entities.computer.Computer;
 import by.bsu.lab12b1.entities.diskDrive.DiskDrive;
-import by.bsu.lab12b1.entities.diskDrive.DiskDriveCreator;
 import by.bsu.lab12b1.entities.processor.Processor;
-import by.bsu.lab12b1.entities.processor.ProcessorCreator;
 import by.bsu.lab12b1.entities.ram.Ram;
 import by.bsu.lab12b1.entities.winchester.Winchester;
-import by.bsu.lab12b1.entities.winchester.WinchesterCreator;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -16,7 +13,9 @@ import java.util.List;
 import java.util.Objects;
 
 public class Logic {
+
     private DataBaseHelper helper;
+
     private PreparedStatement statement;
 
     public <T> List<T> magicalListGetter(T t, int n) {

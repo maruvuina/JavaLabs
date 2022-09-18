@@ -1,9 +1,11 @@
 package by.bsu.lab12b1.entities.diskDrive;
 
-
 public class DiskDrive {
+
     private double capacity;
+
     private int speed;
+
     private TypeDiskDrive typeDiskDrive;
 
     public DiskDrive() {}

@@ -12,6 +12,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InsertData {
+
+    public void insertIntoTables() {
+        List<Ram> ramList = ramListGetter();
+        Logic logic = new Logic();
+        int n = 12;
+        List<Winchester> winchesterList = winchestersListGetter(n);
+        n = 10;
+        List<Processor> processorList = processorsListGetter(n);
+        n = 11;
+        List<DiskDrive> diskDriveList = diskDrivesListGetter(n);
+        List<List<?>> listOfListData =
+                listOfListDataGetter(ramList, winchesterList, processorList, diskDriveList);
+        List<String> tableNames = tableNamesListGetter();
+        logic.insertDataIntoTables(tableNames, listOfListData);
+    }
+
     private List<Ram> ramListGetter() {
         List<Ram> ramList = new ArrayList<>();
         ramList.add(new Ram(2));
@@ -69,20 +85,5 @@ public class InsertData {
         tableNames.add("DiskDrive");
         tableNames.add("Processor");
         return tableNames;
-    }
-
-    public void insertIntoTables() {
-        List<Ram> ramList = ramListGetter();
-        Logic logic = new Logic();
-        int n = 12;
-        List<Winchester> winchesterList = winchestersListGetter(n);
-        n = 10;
-        List<Processor> processorList = processorsListGetter(n);
-        n = 11;
-        List<DiskDrive> diskDriveList = diskDrivesListGetter(n);
-        List<List<?>> listOfListData =
-                listOfListDataGetter(ramList, winchesterList, processorList, diskDriveList);
-        List<String> tableNames = tableNamesListGetter();
-        logic.insertDataIntoTables(tableNames, listOfListData);
     }
 }

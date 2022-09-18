@@ -3,6 +3,7 @@ package by.bsu.lab12b1.entities.ram;
 import java.util.Objects;
 
 public class Ram {
+
     private int size;
 
     public Ram(int size) {

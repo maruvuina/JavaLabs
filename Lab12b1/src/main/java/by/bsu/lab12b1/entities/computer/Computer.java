@@ -8,10 +8,15 @@ import by.bsu.lab12b1.entities.winchester.Winchester;
 import java.util.List;
 
 public class Computer {
+
     private Processor processor;
+
     private DiskDrive diskDrive;
+
     private List<Ram> ramList;
+
     private List<Winchester> winchesterList;
+
     private boolean power;
 
     public Computer() {

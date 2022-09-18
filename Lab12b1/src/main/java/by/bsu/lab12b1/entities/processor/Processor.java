@@ -3,8 +3,11 @@ package by.bsu.lab12b1.entities.processor;
 import java.util.Objects;
 
 public class Processor {
+
     private String brand;
+
     private int numberOfCore;
+
     private double clockFrequency;
 
     public Processor() {}

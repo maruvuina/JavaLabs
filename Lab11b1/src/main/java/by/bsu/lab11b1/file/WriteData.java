@@ -13,6 +13,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WriteData {
+
+  public void writeToExcelFile(Computer computer) {
+    Workbook workbook = getUpdatedWorkbook(computer);
+    String fileName = "data\\ComputerWrite.xls";
+    OutputStream fileOut;
+    try {
+      fileOut = new FileOutputStream(fileName);
+      workbook.write(fileOut);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
   private Workbook getUpdatedWorkbook(Computer computer) {
     Workbook workbook = new HSSFWorkbook();
     List<Sheet> sheets = getSheets(workbook);
@@ -69,17 +82,5 @@ public class WriteData {
     row.createCell(1).setCellValue(computer.getWinchesterList().get(0).getBrand());
     row.createCell(2).setCellValue(computer.getWinchesterList().get(0).getModelNumber());
     row.createCell(3).setCellValue(computer.getWinchesterList().get(0).getSIZE());
-  }
-
-  public void writeToExcelFile(Computer computer) {
-    Workbook workbook = getUpdatedWorkbook(computer);
-    String fileName = "data\\ComputerWrite.xls";
-    OutputStream fileOut;
-    try {
-      fileOut = new FileOutputStream(fileName);
-      workbook.write(fileOut);
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
   }
 }

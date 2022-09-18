@@ -3,8 +3,11 @@ package by.bsu.lab12b1.entities.winchester;
 import java.util.Objects;
 
 public class Winchester {
+
     private String brand;
+
     private String modelNumber;
+
     private int size;
 
     public Winchester() {}
