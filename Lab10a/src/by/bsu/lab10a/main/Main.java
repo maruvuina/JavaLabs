@@ -6,14 +6,6 @@ import java.util.Random;
 import java.util.Stack;
 
 public class Main {
-    private static Stack<Integer> createStackWithRandomElements(int stackSize) {
-        Stack<Integer> stack = new Stack<>();
-        Random random = new Random();
-        for (int i = 0; i < stackSize; i++) {
-            stack.add(random.nextInt(100));
-        }
-        return stack;
-    }
 
     public static void main(String[] args) {
         int stackSize = 10;
@@ -31,5 +23,14 @@ public class Main {
         print.printStackElements(stack1);
         System.out.println("\nStack2");
         print.printStackElements(stack2);
+    }
+
+    private static Stack<Integer> createStackWithRandomElements(int stackSize) {
+        Stack<Integer> stack = new Stack<>();
+        Random random = new Random();
+        for (int i = 0; i < stackSize; i++) {
+            stack.add(random.nextInt(100));
+        }
+        return stack;
     }
 }
