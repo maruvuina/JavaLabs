@@ -1,6 +1,7 @@
 package by.bsu.lab10b.file;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -9,7 +10,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ReadData {
+
     private final String DIR_NAME;
+
     private final String FILE_NAME;
 
     public ReadData(String DIR_NAME, String FILE_NAME) {
