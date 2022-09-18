@@ -1,10 +1,17 @@
 package by.bsu.lab9b.connector;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
 import by.bsu.lab9b.substance.motorcyclist.Motorcyclist;
 import by.bsu.lab9b.substance.motorcyclist.Person;
-import java.io.*;
 
 public class Connector {
+
     private final String DIR_NAME = "dir";
     private final String FILE_NAME = "motorcyclist";
     private final String FILE_EXTENSION = ".ser";

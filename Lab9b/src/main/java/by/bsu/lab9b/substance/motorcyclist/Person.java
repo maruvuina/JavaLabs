@@ -6,9 +6,13 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class Person implements Serializable {
+
     private static final long serialVersionUID = 1726810535302265421L;
+
     private String name;
+
     private String surname;
+
     private static int age;
 
     public Person() {}
@@ -46,6 +50,7 @@ public class Person implements Serializable {
     public static void serializeStatic(ObjectOutputStream oos) throws IOException {
         oos.writeInt(age);
     }
+
     public static void deserializeStatic(ObjectInputStream ois) throws IOException{
         age = ois.readInt();
     }

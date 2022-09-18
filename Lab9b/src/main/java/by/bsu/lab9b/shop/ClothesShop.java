@@ -14,13 +14,13 @@ import by.bsu.lab9b.substance.clothes.pants.PantsCreator;
 import by.bsu.lab9b.substance.clothes.protection.ProtectionCloth;
 import by.bsu.lab9b.substance.clothes.protection.ProtectitonClothCreator;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class ClothesShop {
-    public void buy(ArrayList<Cloth> cloths, String ... clothsType) {
-        Cloth cloth;
+
+    public void buy(List<Cloth> cloths, String ... clothsType) {
         for (String s : clothsType) {
-            cloth = defineCloth(s);
+            Cloth cloth = defineCloth(s);
             if (cloth != null) {
                 cloths.add(cloth);
             }

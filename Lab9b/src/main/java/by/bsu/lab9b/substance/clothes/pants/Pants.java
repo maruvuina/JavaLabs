@@ -3,9 +3,13 @@ package by.bsu.lab9b.substance.clothes.pants;
 import by.bsu.lab9b.substance.clothes.cloth.Cloth;
 
 public class Pants extends Cloth {
+
     private static final long serialVersionUID = -2620819426661633670L;
+
     private String brand;
+
     private int size;
+
     private String madeOf;
 
     public String getBrand() {

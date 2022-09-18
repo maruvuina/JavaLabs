@@ -3,10 +3,15 @@ package by.bsu.lab9b.substance.clothes.protection;
 import by.bsu.lab9b.substance.clothes.cloth.Cloth;
 
 public class ProtectionCloth extends Cloth {
+
     private static final long serialVersionUID = 2710318647714567932L;
+
     private transient boolean motoTurtle;
+
     private transient boolean backProtector;
+
     private transient boolean elbowPads;
+
     private transient boolean kneePads;
 
     public boolean isMotoTurtle() {

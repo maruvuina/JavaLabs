@@ -4,10 +4,15 @@ import by.bsu.lab9b.substance.clothes.cloth.Cloth;
 import by.bsu.lab9b.substance.clothes.cloth.Color;
 
 public class Hemlet extends Cloth {
+
     private static final long serialVersionUID = -8550039880375418934L;
+
     private String brand;
+
     private transient TypeMotoHemlet typeMotoHemlet;
+
     private int size;
+
     private Color color;
 
     public String getBrand() {

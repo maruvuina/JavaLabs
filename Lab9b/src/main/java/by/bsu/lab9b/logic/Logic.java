@@ -4,8 +4,10 @@ import by.bsu.lab9b.substance.clothes.cloth.Cloth;
 import by.bsu.lab9b.substance.motorcyclist.Motorcyclist;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class Logic {
+
     public double getPrice(Motorcyclist motorcyclist) {
         double price = 0;
         for (Cloth cloth : motorcyclist.getClothList()) {
@@ -20,9 +22,8 @@ public class Logic {
         return moto;
     }
 
-    public ArrayList<Cloth> getClothesByPriceGap(Motorcyclist biker,
-                                                        double minPrice, double maxPrice) {
-        ArrayList<Cloth> clothes = new ArrayList<>();
+    public List<Cloth> getClothesByPriceGap(Motorcyclist biker, double minPrice, double maxPrice) {
+        List<Cloth> clothes = new ArrayList<>();
         for (Cloth cloth : biker.getClothList()) {
             if (cloth.getPrice() <= maxPrice && cloth.getPrice() >= minPrice) {
                 clothes.add(cloth);

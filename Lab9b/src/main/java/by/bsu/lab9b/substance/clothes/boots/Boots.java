@@ -3,8 +3,11 @@ package by.bsu.lab9b.substance.clothes.boots;
 import by.bsu.lab9b.substance.clothes.cloth.Cloth;
 
 public class Boots extends Cloth {
+
     private static final long serialVersionUID = 8111816311499886741L;
+
     private String brand;
+
     private String fasteners;
 
     public String getBrand() {

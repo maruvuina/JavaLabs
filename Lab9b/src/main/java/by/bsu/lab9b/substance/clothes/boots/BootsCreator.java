@@ -5,6 +5,14 @@ import com.github.javafaker.Faker;
 import java.util.Random;
 
 public class BootsCreator {
+
+    public Boots fillRandomizedBoots(Boots boots) {
+        Faker faker =  new Faker();
+        boots.setBrand(faker.company().name());
+        boots.setFasteners(randomFasteners());
+        return boots;
+    }
+
     private int index(String []t) {
         return new Random().nextInt(t.length);
     }
@@ -12,12 +20,5 @@ public class BootsCreator {
     private String randomFasteners() {
         String []fasteners = {"zipper", "bootlace"};
         return fasteners[index(fasteners)];
-    }
-
-    public Boots fillRandomizedBoots(Boots boots) {
-        Faker faker =  new Faker();
-        boots.setBrand(faker.company().name());
-        boots.setFasteners(randomFasteners());
-        return boots;
     }
 }

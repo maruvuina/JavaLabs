@@ -3,6 +3,7 @@ package by.bsu.lab9b.substance.clothes.hemlet;
 import java.util.Random;
 
 public enum TypeMotoHemlet {
+
     FullFace,
     Motocross,
     Modular,

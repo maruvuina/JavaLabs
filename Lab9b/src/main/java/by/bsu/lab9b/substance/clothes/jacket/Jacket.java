@@ -4,10 +4,15 @@ import by.bsu.lab9b.substance.clothes.cloth.Cloth;
 import by.bsu.lab9b.substance.clothes.cloth.Color;
 
 public class Jacket extends Cloth {
+
     private static final long serialVersionUID = 6782513476127749246L;
+
     private String brand;
+
     private int size;
+
     private transient String madeOf;
+
     private Color color;
 
     public String getBrand() {

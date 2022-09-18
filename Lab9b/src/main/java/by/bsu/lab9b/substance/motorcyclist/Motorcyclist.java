@@ -4,8 +4,11 @@ import by.bsu.lab9b.substance.clothes.cloth.Cloth;
 import java.util.ArrayList;
 
 public class Motorcyclist extends Person {
+
     private static final long serialVersionUID = -6127457105150299548L;
+
     private static String nickName;
+
     private ArrayList<Cloth> cloths;
 
     public Motorcyclist(String name, String surname, String nickName, int age, ArrayList<Cloth> cloths) {

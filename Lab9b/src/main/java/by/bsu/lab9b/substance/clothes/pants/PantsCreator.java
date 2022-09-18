@@ -4,14 +4,6 @@ import com.github.javafaker.Faker;
 import java.util.Random;
 
 public class PantsCreator {
-    private int index(String []t) {
-        return new Random().nextInt(t.length);
-    }
-
-    private String fillRandomizedMadeOf() {
-        String []madeOf = {"Jeans", "Leather"};
-        return madeOf[index(madeOf)];
-    }
 
     public Pants fillRandomizedPants(Pants pants) {
         Faker faker = new Faker();
@@ -21,5 +13,14 @@ public class PantsCreator {
         pants.setSize(pants.randomSize(minSize, maxSize));
         pants.setMadeOf(fillRandomizedMadeOf());
         return pants;
+    }
+
+    private int index(String []t) {
+        return new Random().nextInt(t.length);
+    }
+
+    private String fillRandomizedMadeOf() {
+        String []madeOf = {"Jeans", "Leather"};
+        return madeOf[index(madeOf)];
     }
 }

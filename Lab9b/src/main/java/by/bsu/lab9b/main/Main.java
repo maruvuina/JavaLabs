@@ -9,9 +9,11 @@ import by.bsu.lab9b.substance.motorcyclist.Motorcyclist;
 import com.github.javafaker.Faker;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         Faker faker = new Faker();
         System.out.print("Enter motorcycle age: ");
@@ -68,7 +70,7 @@ public class Main {
                     System.out.print("Enter maximum price: ");
                     Scanner maxPriceScanner = new Scanner(System.in);
                     int maxPrice = maxPriceScanner.nextInt();
-                    ArrayList<Cloth> cl = logic.getClothesByPriceGap(motorcyclist, minPrice, maxPrice);
+                    List<Cloth> cl = logic.getClothesByPriceGap(motorcyclist, minPrice, maxPrice);
                     print.printMotorcyclistsCloth(cl);
                     break;
                 case 6:

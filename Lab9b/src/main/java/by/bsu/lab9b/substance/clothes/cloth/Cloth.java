@@ -6,9 +6,13 @@ import java.io.Serializable;
 import java.util.Random;
 
 public abstract class Cloth implements Serializable {
+
     private static final long serialVersionUID = -5550976760351939566L;
+
     private final int ID;
+
     private double price;
+
     private double weight;
 
     {
@@ -16,8 +20,8 @@ public abstract class Cloth implements Serializable {
     }
 
     public Cloth() {
-        price = Math.random()*1000;
-        weight = Math.random()*10;
+        price = Math.random() * 1000;
+        weight = Math.random() * 10;
     }
 
     public int getID() {
