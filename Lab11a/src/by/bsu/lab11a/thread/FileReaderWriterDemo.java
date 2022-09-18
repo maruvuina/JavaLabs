@@ -1,8 +1,9 @@
 package by.bsu.lab11a.thread;
 
-import java.io.*;
+import java.io.IOException;
 
 class ThreadReader implements Runnable {
+
     FileOperator fo;
 
     public ThreadReader(FileOperator fo) {

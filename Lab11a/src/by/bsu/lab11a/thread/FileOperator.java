@@ -1,11 +1,20 @@
 package by.bsu.lab11a.thread;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class FileOperator {
+
     File file = new File("data\\File.txt");
+
     BufferedWriter bw;
+
     BufferedReader br;
+
     boolean isWriteComplete = false;
 
     public FileOperator() throws IOException {

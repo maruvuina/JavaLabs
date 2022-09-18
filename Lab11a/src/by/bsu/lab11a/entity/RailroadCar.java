@@ -3,9 +3,13 @@ package by.bsu.lab11a.entity;
 import java.util.Objects;
 
 public class RailroadCar {
+
     private int idRailroadCar;
+
     private TypeRailroadCar typeCar;
+
     private int mass;
+
     private int loadCapacity;
 
     public RailroadCar() {}

@@ -7,9 +7,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Train {
+
     private int idTrain;
+
     private List<RailroadCar> railRoadCar;
+
     ExecutorService executor = Executors.newFixedThreadPool(2);
+
     ReentrantLock lock = new ReentrantLock();
 
     public Train() {}
